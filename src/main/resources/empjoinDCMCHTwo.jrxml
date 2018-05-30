@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinTwo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c4616d6f-c7e8-4349-a61c-adf0a6164368">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="252"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85"/>
+	</title>
+	<detail>
+		<band height="600" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="0" width="515" height="55" uuid="5ade2b34-ce40-4e97-87d7-03613be1d9ab"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[9. Your individual remuneration is purely a matter between yourself and the Company and has been arrived on the basis of your specific background and professional merit. We expect you to maintain this information and any changes made therein from time to time as personal and confidential.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="57" width="515" height="35" uuid="620ca4c3-6b7b-48ca-a1da-80afd5f09327"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[10. You shall be entitled to festival bonus during the two Eid equivalents to one basic salary in each Eid after completion of probation period.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="94" width="515" height="75" uuid="b8886758-dc3c-4d21-a9e8-8d268aff03b8"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[11.You shall, during your service with us, devote your whole time and attention to the Company's business entrusted to you and you shall not engage yourself directly or indirectly in any business or service other than the Company's business or service and shall not engage in any profession or vocation which competes with activities of our Organization or conflicts with your position at DCIMCH.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="171" width="515" height="16" uuid="ec41985e-aca9-4927-b2e0-d41f2e5cea83"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[12. Information pertaining to the Company's operations shall remain secret and safeguarded by you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="189" width="515" height="57" uuid="8464fb12-ec8b-438b-86f5-03774519f725"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[13. You shall inform the Company of any change in your personal data within 3 working days. Any notice required to be given to you shall be deemed to have been duly and properly given if delivered to you personally or sent by registered post to you at your address in Bangladesh, as recorded with the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="248" width="515" height="57" uuid="bbe90f79-293a-422a-808a-1f2d95fa50a4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[14. You will abide by the Rules & Regulations of the Company, which are in force from time to time. The Company shall have the right to vary or modify any or all of the above terms and condition of service which shall be binding on you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="307" width="515" height="57" uuid="271c4426-b4dd-4c92-a5da-0be088dc4ed0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[15. You shall not place yourself in a position, which warrants any pecuniary/non pecuniary obligation with vendors, suppliers, business associates, competitors, etc. You shall also not accept directly or indirectly any gift or reward from any person with whom you are likely to have official dealings.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="366" width="515" height="18" uuid="d28a12f4-bd1d-4056-9cbb-1031490ff3c4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[16. The age for retirement from the Company's service is 60 years.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="385" width="515" height="38" uuid="2b777144-d27c-4381-ac84-a0be6597bfb3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[17. If you are absent from the designated office beyond a period of 10 working days without adequate authorization as per Company policies, you shall be deemed to have abandoned employment on your own]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="425" width="515" height="55" uuid="96c65f58-bb40-4c07-aced-5fac26676ffc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[18.Your services shall be terminable by either party giving the other 1 (One) month notice. Company may, however, reduce this notice period at its discretion by accepting / paying basic salary in lieu the thereof. Your resignation will not be deemed or accepted till it is accepted/confirmed in writing by an authorized signatory from HR Department of the Company.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="219" y="0" width="100" height="20" forecolor="#404040" uuid="72bee902-9305-40c6-82ee-6a7590b6a6e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Page 2 of 4]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

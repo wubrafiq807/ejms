@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition" template="/WEB-INF/tiles/template/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	
+	<definition name="base.definition2" template="/WEB-INF/views/login.jsp">
+		<put-attribute name="title" value="Synergy Employee Join Management System"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<!-- Login Page -->
+	<definition name="login" extends="base.definition2">
+		<put-attribute name="title" value="EJMS Login Form"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="title" value="Synergy Employee Join Management System Dashboard"/>
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="candidateForm" extends="base-definition">
+		<put-attribute name="title" value="New Candidate Entry Form" />
+		<put-attribute name="body" value="/WEB-INF/views/candidateForm.jsp" />
+	</definition>
+	
+	<definition name="candidatePendingList" extends="base-definition">
+		<put-attribute name="title" value="Pending Candidate List" />
+		<put-attribute name="body" value="/WEB-INF/views/candidatePendingList.jsp" />
+	</definition>
+	
+	<definition name="todaysJoinCandList" extends="base-definition">
+		<put-attribute name="title" value="Todays Joined Candidate List" />
+		<put-attribute name="body" value="/WEB-INF/views/todaysJoinCandList.jsp" />
+	</definition>
+	
+	<definition name="joinedCandidateList" extends="base-definition">
+		<put-attribute name="title" value="Joined Candidate List" />
+		<put-attribute name="body" value="/WEB-INF/views/joinedCandidateList.jsp" />
+	</definition>
+	
+	<definition name="declineCandidateList" extends="base-definition">
+		<put-attribute name="title" value="Decline Candidate List" />
+		<put-attribute name="body" value="/WEB-INF/views/declineCandidateList.jsp" />
+	</definition>
+	
+	<definition name="recruitmentHistory" extends="base-definition">
+		<put-attribute name="title" value="Recruitment History" />
+		<put-attribute name="body" value="/WEB-INF/views/recruitmentHistory.jsp" />
+	</definition>
+	
+	<definition name="candidateProfileForm" extends="base-definition">
+		<put-attribute name="title" value="Candidate Profile Form" />
+		<put-attribute name="body" value="/WEB-INF/views/candidateProfileForm.jsp" />
+	</definition>
+	
+	
+	<definition name="candidateResponse" extends="base-definition">
+		<put-attribute name="title" value="Offer Letter"/>
+		<put-attribute name="body" value="/WEB-INF/views/candidateResponse.jsp" />
+	</definition>
+	
+	<definition name="adminDashboard" extends="base-definition">
+		<put-attribute name="title" value="Admin Dashboard"/>
+		<put-attribute name="body" value="/WEB-INF/views/adminDashboard.jsp" />
+	</definition>
+	
+	<definition name="questionSetOneForm" extends="base-definition">
+		<put-attribute name="title" value="Question Set One Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetOneForm.jsp" />
+	</definition>
+	
+	<definition name="questionSetTwoForm" extends="base-definition">
+		<put-attribute name="title" value="Question Set Two Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetTwoForm.jsp" />
+	</definition>
+	<definition name="questionSetThreeForm" extends="base-definition">
+		<put-attribute name="title" value="Question Set Three Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetThreeForm.jsp" />
+	</definition>
+	
+	<definition name="questionSetOneAnsList" extends="base-definition">
+		<put-attribute name="title" value="Question Set One Ans List"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetOneAnsList.jsp" />
+	</definition>
+	<definition name="questionSetTwoAnsList" extends="base-definition">
+		<put-attribute name="title" value="Question Set Two Ans List"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetTwoAnsList.jsp" />
+	</definition>
+	<definition name="questionSetThreeAnsList" extends="base-definition">
+		<put-attribute name="title" value="Question Set Three Ans List"/>
+		<put-attribute name="body" value="/WEB-INF/views/questionSetThreeAnsList.jsp" />
+	</definition>
+	
+	<definition name="candidateAnswer1" extends="base-definition">
+		<put-attribute name="title" value="Candidate Answer One"/>
+		<put-attribute name="body" value="/WEB-INF/views/candidateAnswer1.jsp" />
+	</definition>
+	
+	<definition name="candidateAnswer2" extends="base-definition">
+		<put-attribute name="title" value="Candidate Answer Two"/>
+		<put-attribute name="body" value="/WEB-INF/views/candidateAnswer2.jsp" />
+	</definition>
+	
+	<definition name="candidateAnswer3" extends="base-definition">
+		<put-attribute name="title" value="Candidate Answer Three"/>
+		<put-attribute name="body" value="/WEB-INF/views/candidateAnswer3.jsp" />
+	</definition>
+	
+	<definition name="performanceReportForm" extends="base-definition">
+		<put-attribute name="title" value="Reports"/>
+		<put-attribute name="body" value="/WEB-INF/views/performanceReportForm.jsp" />
+	</definition>
+	
+	<definition name="candidateUploadForm" extends="base-definition">
+		<put-attribute name="title" value="Candidate Upload Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/candidateUploadForm.jsp" />
+	</definition>
+	
+</tiles-definitions>

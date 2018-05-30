@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExtensionLetter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="470a284c-7ccb-4e33-a0c0-ce3a42b12f66">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="textBody" class="java.lang.String"/>
+	<field name="candName" class="java.lang.String"/>
+	<field name="presentAddress" class="java.lang.String"/>
+	<field name="refNo" class="java.lang.String"/>
+	<field name="candProfileApproveDate" class="java.lang.String"/>
+	<field name="desName" class="java.lang.String"/>
+	<field name="depName" class="java.lang.String"/>
+	<field name="oldDateOfJoin" class="java.lang.String"/>
+	<field name="dateOfJoin" class="java.lang.String"/>
+	<field name="alIssuedBy" class="java.lang.String"/>
+	<field name="alIssuedByDesignation" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="0" width="144" height="20" uuid="a494885b-7aa2-4ebb-be4f-3db09c71c6a9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false" isUnderline="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Strictly Confidential]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="125">
+			<staticText>
+				<reportElement x="39" y="0" width="31" height="25" uuid="51297add-ca7d-4e06-961c-064fe3248a6d"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Date: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="25" width="37" height="25" uuid="110300c9-e1b6-4d7f-84f5-6837fe23fd3e"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="50" width="53" height="25" uuid="3ee0eb10-cb06-4e0a-adfd-60c7367c3516"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Address: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="91" width="305" height="25" uuid="fd8fea2f-74f5-42ca-a72b-9bd2fb1b5459"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Subject: Extension of joining date.]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="70" y="0" width="211" height="25" uuid="84241c97-696b-4e66-a192-81449374303b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="25" width="479" height="25" uuid="9788a0b6-7009-4852-a7d1-e2ed3f75137c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="50" width="463" height="41" uuid="6bb300b0-a8ec-4886-9106-a7deed386bdb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{presentAddress}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="183" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="10" width="67" height="20" uuid="561e67fa-665c-4e70-8fa3-954d6618f02e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Dear Mr/Ms]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="106" y="10" width="106" height="20" uuid="69ff6119-3b52-4380-a35a-0930bf0e81f3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="40" width="516" height="70" uuid="419d4b79-e3bc-478f-a04e-67513db4bcad"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{textBody}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="110" width="516" height="20" uuid="15574945-cdde-4561-92ed-d0e128430d5e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[As a special case, based on our discussions we hereby extend the date of your joining up to ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="130" width="516" height="23" uuid="e9c25bc4-29fa-4b8c-9277-efd42984cd02"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dateOfJoin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="160" width="516" height="19" uuid="0263d6fe-cdf4-4d55-ab92-a6b3745e7e0a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[All other terms and conditions remain unchanged. ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="165" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="27" width="479" height="20" uuid="d60951f5-9895-46ca-a008-94bc05276d40"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Best regards ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="74" width="479" height="20" uuid="14998a80-9d2d-44dc-b3ca-9ea59cfa8ba0"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_____________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="94" width="467" height="20" uuid="ecec474b-c099-496d-9f39-8c7510344fd8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="114" width="479" height="20" uuid="47f3e677-1292-4c01-9fbe-e6d975a5ec51"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedByDesignation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="134" width="479" height="20" uuid="3f8f0a32-26b4-4972-9f4c-21b75f053974"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Human Resource Department ]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

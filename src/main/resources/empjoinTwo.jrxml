@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinTwo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c4616d6f-c7e8-4349-a61c-adf0a6164368">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="305"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95"/>
+	</title>
+	<detail>
+		<band height="603" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="99" width="516" height="19" uuid="bdbb4f3b-4f0c-4785-b60a-9e0c9e29afb9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[14. Information pertaining to the company's operations shall remain secret and safeguarded by you.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="0" width="516" height="92" uuid="4e03c514-19e3-4ac1-a80f-69da16dc4ee0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="118" width="516" height="58" uuid="c4a295ad-fe42-4c2c-8e3e-13150382c7c4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[15. You shall inform the Company of any change in your personal data within 3 working days. Any notice required to be given to you shall be deemed to have been duly and properly given if delivered to you personally or sent by registered post to you at your address in Bangladesh, as recorded with the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="176" width="516" height="58" uuid="2f5c55cd-e292-411d-a947-92072335c1f0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[16.  You will abide by the Rules & Regulations of the Company, which are in force from time to time. The Company shall have the right to vary or modify any or all of the above terms and condition of service which shall be binding on you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="234" width="516" height="58" uuid="8487167c-798c-4788-bdb6-9c47cf20ee5b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[17. You shall not place yourself in a position, which warrants any pecuniary/non pecuniary obligation with vendors, suppliers, business associates, competitors, etc. You shall also not accept directly or indirectly any gift or reward from any person with whom you are likely to have official dealings.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="292" width="516" height="18" uuid="39c3e89e-a26d-4180-b523-2d6c6ef32571"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[18. The age for retirement from the Company's service is 60 years.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="310" width="516" height="56" uuid="dfebdf50-80b6-490f-9a2a-88d9a4906d03"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[19.  If you are absent from the designated office beyond a period of 10 working days without adequate authorization as per Company policies, you shall be deemed to have abandoned employment on your own will.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="366" width="516" height="78" uuid="36060f7a-6aaa-4664-8699-41cb5c4872ae"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[20.  Your services shall be terminable by either party giving the other 1 (One) month notice. Company may, however, reduce this notice period at its discretion by accepting / paying basic salary in lieu the thereof. Your resignation will not be deemed or accepted till it is accepted/confirmed in writing by an authorized signatory from HR Department of the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="444" width="516" height="61" uuid="2f7d2b80-4367-4163-aeb6-61c04e542492"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[21. If you are found guilty of any misconduct or should you commit any breach of the service conditions or get involved in an act, which in the opinion of the company is prejudicial to the interest of the company, the company may without any previous notice or termination payment, terminate your services.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="60">
+			<staticText>
+				<reportElement x="215" y="40" width="100" height="20" forecolor="#404040" uuid="6f80e86c-55c2-4d66-8dbd-b44dac7f9dd5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Page 2 of 4]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

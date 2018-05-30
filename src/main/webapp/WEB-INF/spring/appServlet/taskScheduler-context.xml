@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<!-- Task Scheduler For US -->
+
+
+	<bean id="runScheduler" class="com.nazdaq.ejms.SchedulerJob" />
+	
+		<!-- Task Scheduler For 'Reminder' every morning 08:40:10 AM-->		
+		<task:scheduled-tasks scheduler="taskSchedulerForReminder">
+			<task:scheduled ref="runScheduler" method="candidateJoiningReminder"
+				cron="10 40 08 * * ?" />
+		</task:scheduled-tasks>
+		
+		<!-- Task Scheduler For 'Q1' every morning 08:45:10 AM-->		
+		<task:scheduled-tasks scheduler="taskSchedulerForQuestion1">
+			<task:scheduled ref="runScheduler" method="firstQuesSetSending"
+				cron="10 45 08 * * ?" />
+		</task:scheduled-tasks>
+		
+		<!-- Task Scheduler For 'Q2' every morning 08:50:10 AM-->		
+		<task:scheduled-tasks scheduler="taskSchedulerForQuestion2">
+			<task:scheduled ref="runScheduler" method="secondQuesSetSending"
+				cron="10 50 08 * * ?" />
+		</task:scheduled-tasks>
+		
+		<!-- Task Scheduler For 'Q3' every morning 08:55:10 AM-->		
+		<task:scheduled-tasks scheduler="taskSchedulerForQuestion3">
+			<task:scheduled ref="runScheduler" method="thirdQuesSetSending"
+				cron="10 55 08 * * ?" />
+		</task:scheduled-tasks>
+		
+		
+
+	<task:scheduler id="taskSchedulerForReminder" />
+	<task:scheduler id="taskSchedulerForQuestion1" />
+	<task:scheduler id="taskSchedulerForQuestion2" />
+	<task:scheduler id="taskSchedulerForQuestion3" />
+		
+</beans>

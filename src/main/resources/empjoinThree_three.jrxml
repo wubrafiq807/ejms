@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinThree" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6f0771e1-083c-46ce-9181-3a388a8cbc22">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="2"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<field name="candName" class="java.lang.String"/>
+	<field name="recuriteEmpName" class="java.lang.String"/>
+	<field name="alIssuedBy" class="java.lang.String"/>
+	<field name="alIssuedByDesignation" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105"/>
+	</title>
+	<detail>
+		<band height="500" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="0" width="513" height="57" uuid="4ee769a5-5619-40a4-8eff-8f4bfd824a1c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[22.  Notice to terminate employment in any electronic form such as SMS or personal email shall not be accepted. Notice to terminate the employment by an employee, has to be addressed in writing with proper signature, to the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="247" width="297" height="20" uuid="37174d65-e4f1-4134-90b2-dcd47b478ede"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Yours truly,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="267" width="151" height="20" uuid="5f9413b7-f854-4432-9165-bb7eb36f7e46"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[.................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="337" width="297" height="35" uuid="8c00dd22-1113-4229-a5fe-da87e591c505"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Human Resource Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="382" width="297" height="44" uuid="f4d70fd2-b146-48ac-95f5-82362fb6dbdc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="25.0"/>
+				</textElement>
+				<text><![CDATA[Accept the terms and conditions specified above.
+.................................
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="426" width="297" height="20" uuid="885e3f9b-ffba-4289-9c1d-4b005424aa24"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="446" width="46" height="20" uuid="615be69c-0066-4ad6-acfb-29afa2895726"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="446" width="254" height="20" uuid="7d02cc5c-d258-40d0-8bcb-c8a31fc16783"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="287" width="297" height="20" uuid="2711ffd4-efc1-42ba-a8cc-2beb1008ea6f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="307" width="297" height="20" uuid="0fdb3357-e764-4ab0-9a9f-0d8ccba4d36e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedByDesignation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="57" width="513" height="96" uuid="ab261e80-a3e6-4706-bc80-ee27c432c4fb"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[23.  All terms and conditions will be governed by the company's policies as stated from time to time and the company may in its sole discretion as it deems fit revoke or change such policies. It shall be your duty to peruse and understand all the terms and conditions enumerated in company's policy as well as the repercussions of the breach thereof and not being aware of the same shall not be a defense, which shall be either available to you or accepted by the company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="151" width="513" height="38" uuid="137d5284-91f5-4615-8171-8dc0bb7a4b0e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[24. For clarifications or any other information kindly feel free to contact the undersigned or your HR Manager.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="189" width="513" height="44" uuid="c3c0cf3e-625f-453f-aa3b-bf585845e8b1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[We take pleasure in welcoming you to our organization and sincerely hope that your period of service with us will be long, pleasant and of mutual benefit.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="215" y="70" width="124" height="20" forecolor="#404040" uuid="78bbf05f-0023-4e4e-bdbc-b713fe91552b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Page 3 of 4]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

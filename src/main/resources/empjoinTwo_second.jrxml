@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinTwo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c4616d6f-c7e8-4349-a61c-adf0a6164368">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95"/>
+	</title>
+	<detail>
+		<band height="582" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="0" width="516" height="17" uuid="bdbb4f3b-4f0c-4785-b60a-9e0c9e29afb9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[12. Information pertaining to the company's operations shall remain secret and safeguarded by you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="17" width="516" height="59" uuid="424e3c58-61de-4f62-8b6a-2f7326dbcb57"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[13. You shall inform the Company of any change in your personal data within 3 working days. Any notice required to be given to you shall be deemed to have been duly and properly given if delivered to you personally or sent by registered post to you at your address in Bangladesh, as recorded with the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="76" width="516" height="57" uuid="d9399d99-3c12-465a-bfb0-fca260c680c8"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[14.  You will abide by the Rules & Regulations of the Company, which are in force from time to time. The Company shall have the right to vary or modify any or all of the above terms and condition of service which shall be binding on you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="133" width="516" height="57" uuid="ac73fa70-8262-4f3b-ba8d-d9715281d3c9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[15. You shall not place yourself in a position, which warrants any pecuniary/non pecuniary obligation with vendors, suppliers, business associates, competitors, etc. You shall also not accept directly or indirectly any gift or reward from any person with whom you are likely to have official dealings.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="190" width="516" height="18" uuid="4c3853de-d28e-4522-84d0-412e07553a98"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[16. The age for retirement from the Company's service is 60 years.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="208" width="516" height="58" uuid="c882f291-a809-4d26-b430-a532890765e0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[17.  If you are absent from the designated office beyond a period of 10 working days without adequate authorization as per Company policies, you shall be deemed to have abandoned employment on your own will.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="266" width="516" height="76" uuid="12002473-0ef7-469e-8537-e9a7c698dda7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[18.  Your services shall be terminable by either party giving the other 1 (One) month notice. Company may, however, reduce this notice period at its discretion by accepting / paying basic salary in lieu the thereof. Your resignation will not be deemed or accepted till it is accepted/confirmed in writing by an authorized signatory from HR Department of the Company.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="342" width="516" height="57" uuid="1e1bcb7d-8a66-491b-b094-cf41f07ea906"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[19. If you are found guilty of any misconduct or should you commit any breach of the service conditions or get involved in an act, which in the opinion of the company is prejudicial to the interest of the company, the company may without any previous notice or termination payment, terminate your services.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="399" width="516" height="94" uuid="9b0a039b-c56a-497d-9b11-4cf0c4ecb56e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[20. Upon termination of your employment, due to any reason whatsoever, you will return to the company all papers, documents, properties/assets which may at that time be in your possession relating to the business or affairs of the company or any of its associates or branches and will not retain any copies or extracts therefore or hold/keep back any assets. You shall also return to the company’s ID card / SIM card issued to you for cancellation.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="60">
+			<staticText>
+				<reportElement x="225" y="40" width="100" height="20" uuid="777b00ab-7064-461d-9f11-f3a868533b28"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Page 2 of 4]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

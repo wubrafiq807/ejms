@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinFour" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="66fccfa3-2755-47e9-bc84-af716ce9186e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<parameter name="reference" class="java.lang.String"/>
+	<parameter name="feturereview" class="java.lang.String"/>
+	<parameter name="salary" class="java.lang.String"/>
+	<parameter name="basicSalary_pr" class="java.lang.String"/>
+	<parameter name="houseRent_pr" class="java.lang.String"/>
+	<parameter name="medicalIn_pr" class="java.lang.String"/>
+	<parameter name="conveyance_pr" class="java.lang.String"/>
+	<parameter name="others_pr" class="java.lang.String"/>
+	<field name="candName" class="java.lang.String"/>
+	<field name="recuriteEmpName" class="java.lang.String"/>
+	<field name="desiName" class="java.lang.String"/>
+	<field name="grossSalary" class="java.lang.Double"/>
+	<field name="recuriteDeptNameName" class="java.lang.String"/>
+	<field name="alIssuedBy" class="java.lang.String"/>
+	<field name="alIssuedByDesignation" class="java.lang.String"/>
+	<field name="referenceAndCurrentDate" class="java.lang.String"/>
+	<field name="basicSalary" class="java.lang.Double"/>
+	<field name="houseRent" class="java.lang.Double"/>
+	<field name="medicalIn" class="java.lang.Double"/>
+	<field name="conveyance" class="java.lang.Double"/>
+	<field name="salaryOthersAmt" class="java.lang.Double"/>
+	<variable name="basic" class="java.lang.Integer" resetType="None">
+		<variableExpression><![CDATA[(new Integer($F{grossSalary}.intValue())*new Integer($F{basicSalary}.intValue()))/100]]></variableExpression>
+		<initialValueExpression><![CDATA[(new Integer($F{grossSalary}.intValue())*new Integer($F{basicSalary}.intValue()))/100]]></initialValueExpression>
+	</variable>
+	<variable name="houseRent" class="java.lang.Integer">
+		<variableExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{houseRent}.intValue())/100]]></variableExpression>
+		<initialValueExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{houseRent}.intValue())/100]]></initialValueExpression>
+	</variable>
+	<variable name="medical" class="java.lang.Integer">
+		<variableExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{medicalIn}.intValue())/100]]></variableExpression>
+		<initialValueExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{medicalIn}.intValue())/100]]></initialValueExpression>
+	</variable>
+	<variable name="convence" class="java.lang.Integer">
+		<variableExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{conveyance}.intValue())/100]]></variableExpression>
+		<initialValueExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{conveyance}.intValue())/100]]></initialValueExpression>
+	</variable>
+	<variable name="others" class="java.lang.Integer">
+		<variableExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{salaryOthersAmt}.intValue())/100]]></variableExpression>
+		<initialValueExpression><![CDATA[new Integer($F{grossSalary}.intValue()*$F{salaryOthersAmt}.intValue())/100]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85"/>
+	</title>
+	<detail>
+		<band height="620" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="19" width="114" height="20" uuid="ce3c2018-9dd3-4974-8f79-878f29376489"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Annexure 'A']]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="19" width="139" height="20" uuid="34db0052-640b-4164-babe-6653a565d14d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Personal & Confidential]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="47" width="38" height="20" uuid="0c21540d-eca6-4d22-9ed1-0ac42166c204"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="47" width="173" height="20" uuid="d9a58750-b816-4936-bd07-5604a161dd35"/>
+				<box leftPadding="3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="67" width="73" height="20" uuid="57db1bcb-80c4-4aca-a2f7-6f31fa880ad5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Designation:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="112" y="67" width="303" height="20" uuid="b8e08ab3-e4ee-4610-80ab-7c8bfc7545d0"/>
+				<box leftPadding="3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{desiName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="142" width="47" height="20" uuid="c43f4a7f-88c0-4260-88a3-8480a80b4245"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="39" y="208" width="282" height="32" backcolor="#666666" uuid="9fb0a32e-8d57-4ddd-afa2-bdb55fbb9fe3"/>
+				<box topPadding="0" leftPadding="4">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Salary Breakdown]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="340" width="282" height="20" uuid="329ea4e5-c0af-4546-964c-471967ace964"/>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Total Gross Salary per month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="321" y="208" width="223" height="32" backcolor="#666666" uuid="b7ecab81-1810-40f3-8911-a776688248a8"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="321" y="240" width="223" height="20" uuid="9fd1973f-0f9f-49aa-8c48-75d147cccc4f"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{basic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="260" width="223" height="20" uuid="16dc749e-10c2-4705-8f77-098b580f0925"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{houseRent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="280" width="223" height="20" uuid="d01680a5-a877-476c-99ed-8def81c7d0d3"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{convence}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="300" width="223" height="20" uuid="e45d6077-d5b4-475e-bfe8-e06d5b292bd9"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{medical}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="340" width="223" height="20" uuid="0e05df08-a7d4-4d7a-8756-97e99130ee2b"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Integer($F{grossSalary}.intValue())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="438" width="516" height="32" uuid="96d2def0-5d33-4b4e-94ed-079d6fac310c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[All income will be taxable according to the income tax law of Bangladesh. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="470" width="99" height="20" uuid="367f7b98-c82a-40fd-9249-68289c9d7d3e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Yours truly,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="505" width="103" height="20" uuid="e8c3550a-6f51-4c9d-92eb-19a162d03662"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[.............................	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="567" width="263" height="20" uuid="6c445b26-92fd-4514-991d-4dabec44c1ca"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Accept the terms and conditions specified above.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="370" width="516" height="87" uuid="943b0932-3bdc-4f8e-9721-a123b99efe3a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{feturereview}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="162" width="516" height="46" uuid="02170e2e-955e-4f91-8a82-00609bf2a59d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{salary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="598" width="263" height="20" uuid="f82e095c-6d16-4b54-aed0-cc3ab9e2392e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[...........................................]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="525" width="361" height="20" uuid="b45ca183-f420-4998-bc18-d4385a6fd639"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="545" width="361" height="20" uuid="36d4540a-074b-40b6-b586-971cbd55fac9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alIssuedByDesignation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="87" width="513" height="55" uuid="dfadca77-8644-49ac-8164-5dbf3c530111"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referenceAndCurrentDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="320" width="223" height="20" uuid="3111470c-0584-4e02-a726-7f66e14016b6"/>
+				<box topPadding="4" rightPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{others}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="240" width="282" height="20" uuid="a261ce22-b7fe-487b-8871-0a361ca88e66"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{basicSalary_pr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="260" width="282" height="19" uuid="3be91008-5f0e-46b4-a7e9-b209a693ede7"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{houseRent_pr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="279" width="282" height="21" uuid="2b8cc34b-6278-4c08-965e-e143288e47c5"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{conveyance_pr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="300" width="282" height="20" uuid="7de357cc-6555-4d66-b92c-c8aa7ccc4e31"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medicalIn_pr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="320" width="282" height="20" uuid="67310ccb-1d35-4835-9934-d7f022fd4a3e"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{others_pr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="0" width="128" height="20" forecolor="#404040" uuid="76d919be-2a5c-4d73-aeef-0d68edd53ea4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Page 4 of 4]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

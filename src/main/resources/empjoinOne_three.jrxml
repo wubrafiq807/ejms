@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="empjoinOne" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6f438f4-d440-4916-af6b-c384c50e7830">
+	<property name="ireport.zoom" value="1.771561000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cand_id" class="java.lang.String"/>
+	<parameter name="approved_date" class="java.lang.String"/>
+	<parameter name="reference" class="java.lang.String"/>
+	<parameter name="joiningdate" class="java.lang.String"/>
+	<field name="candName" class="java.lang.String"/>
+	<field name="candMobileNo" class="java.lang.String"/>
+	<field name="depName" class="java.lang.String"/>
+	<field name="desiName" class="java.lang.String"/>
+	<field name="grade" class="java.lang.String"/>
+	<field name="supervisorName" class="java.lang.String"/>
+	<field name="officeAddress" class="java.lang.String"/>
+	<field name="presentAddress" class="java.lang.String"/>
+	<field name="dateOfJoin" class="java.lang.String"/>
+	<field name="provisionPeriod" class="java.lang.String"/>
+	<field name="yearlyBonus" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="262">
+			<textField>
+				<reportElement x="71" y="23" width="154" height="20" uuid="eb54f8c1-f49f-47fb-ba7d-72e6524c5c34"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reference}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="181" width="440" height="20" uuid="7cef6e02-6950-4e3f-945b-aef19744f136"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{desiName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="25" width="37" height="16" uuid="44c1658b-6816-4e6c-bd2a-02e3a0a5bbca"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dated:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="99" y="89" width="234" height="18" uuid="89f4fde4-f371-4e42-bc8b-8637825ae52b"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candMobileNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="140" width="29" height="18" uuid="31298081-d8a1-4ac3-a19f-f41946ad31cb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Dear ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="113" width="454" height="20" uuid="188c19ee-95b3-494a-b969-b60910746144"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Appointment Letter.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="71" width="50" height="18" uuid="0bfb4203-4bf7-44ab-90af-b9c5ec4535d7"/>
+				<box rightPadding="0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="0" width="196" height="20" uuid="690043af-34b1-4b08-8db2-20024390a748"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Personal & Confidential]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="25" width="102" height="16" uuid="b325121c-21bd-4a1a-9680-2c01fe8be8c4"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{approved_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="113" width="45" height="20" uuid="edde1295-37dc-415a-afe1-59a28ba41b64"/>
+				<box rightPadding="0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Subject:
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="53" width="38" height="18" uuid="f75d238a-ef3f-48f1-b107-1ebb0a77999a"/>
+				<box rightPadding="0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="155" y="241" width="403" height="20" uuid="c41e7456-58d2-47c6-a046-f29c96dc3e4f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supervisorName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="201" width="105" height="20" uuid="ca56c04a-fc92-474a-b6a9-87f47b3e72c6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.Corporate Grade-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="91" y="71" width="455" height="18" uuid="84961cf0-a03d-49eb-b752-b6f588ede0d4"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{presentAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="221" width="440" height="20" uuid="aed42319-894c-49c1-9d8d-0bb95cdaf4b3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{depName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="89" width="58" height="18" uuid="7da63419-3f8b-4192-8865-302a2693ded1"/>
+				<box rightPadding="0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Mobile No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="221" width="75" height="20" uuid="e4e613a2-57f9-4f92-b391-a2c65dd7b1d3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.Department-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="161" width="517" height="20" uuid="2a888f35-f8e9-4571-8698-988ae031cb1b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[We are pleased to appoint you on the following terms and conditions:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="145" y="201" width="413" height="20" uuid="9dbb2ea4-1c76-44a4-aaa4-e17ce837aa42"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grade}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="181" width="78" height="20" uuid="a3725f39-0552-4501-9709-fcff2914baac"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.Designation-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="74" y="140" width="112" height="18" uuid="a6f0c471-83e2-4faa-a928-7059b4c126b1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="23" width="28" height="20" uuid="9d69e219-9950-4c8c-b321-78462719daa8"/>
+				<box rightPadding="0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Ref.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="241" width="115" height="20" uuid="365a40aa-bc61-482e-94e5-13288694a9c8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4.Reporting Manager-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="53" width="455" height="18" uuid="4f72218b-c4bb-41a2-ba78-41f9dacf4519"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="401" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="137" width="516" height="76" uuid="c4b0ee52-f99a-40c3-9e8a-b92980e77948"/>
+				<box bottomPadding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[9. The normal working days are Saturday to Thursday. You will be required to work for such hours as necessary for the proper discharge of your duties to the Company. The normal working hours are from 9:30 a.m. to 6:00 p.m. (Including Rest) and you are expected to work not less than 48 hours each week and if necessary for additional hours depending on your responsibilities.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="21" width="515" height="55" uuid="6a9b9dc9-5e61-41c3-9e9d-3ada1eac4753"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{officeAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="77" width="515" height="40" uuid="f37898cd-e23e-47dc-aadf-7055283119f3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{provisionPeriod}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="117" width="515" height="20" uuid="11bfd45d-d6ba-426b-987e-b0acf6f3f1a7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{joiningdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="289" width="516" height="110" uuid="b95ddb7f-4de8-459a-a18d-104d0e4be43f"/>
+				<box topPadding="4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="213" width="516" height="18" uuid="ada32bb7-2a32-4338-a54d-9476e8136358"/>
+				<box bottomPadding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[10. You will be entitled to leave in accordance with the leave rules of the Company for the time being in force.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="231" width="516" height="56" uuid="830ca1c0-4cc7-4f1d-b891-1f18cd7d0357"/>
+				<box bottomPadding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[11. Your individual remuneration is purely a matter between yourself and the Company and has been arrived on the basis of your specific background and professional merit. We expect you to maintain this information and any changes made therein from time to time as personal and confidential.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="3" width="513" height="16" uuid="3cc4db2f-75e2-4fa1-996a-90f505608b06"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[5. Compensation Perquisites &Allowances: As Detailed in Annexure 'A'.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20">
+			<staticText>
+				<reportElement x="240" y="0" width="100" height="20" forecolor="#404040" uuid="769d2a51-c47c-4b66-ac2c-ff42a3a15a83"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Page 1 of 4]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

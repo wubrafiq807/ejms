@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExtensionLetter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="470a284c-7ccb-4e33-a0c0-ce3a42b12f66">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="textBody" class="java.lang.String"/>
+	<field name="candName" class="java.lang.String"/>
+	<field name="presentAddress" class="java.lang.String"/>
+	<field name="refNo" class="java.lang.String"/>
+	<field name="candProfileApproveDate" class="java.lang.String"/>
+	<field name="desName" class="java.lang.String"/>
+	<field name="depName" class="java.lang.String"/>
+	<field name="oldDateOfJoin" class="java.lang.String"/>
+	<field name="dateOfJoin" class="java.lang.String"/>
+	<field name="alIssuedBy" class="java.lang.String"/>
+	<field name="alIssuedByDesignation" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="214">
+			<staticText>
+				<reportElement x="39" y="30" width="31" height="25" uuid="51297add-ca7d-4e06-961c-064fe3248a6d"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Date: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="130" width="53" height="25" uuid="3ee0eb10-cb06-4e0a-adfd-60c7367c3516"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Address: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="181" width="305" height="25" uuid="fd8fea2f-74f5-42ca-a72b-9bd2fb1b5459"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" isUnderline="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Subject: Joining Letter]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="70" y="30" width="211" height="25" uuid="84241c97-696b-4e66-a192-81449374303b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="130" width="463" height="41" uuid="6bb300b0-a8ec-4886-9106-a7deed386bdb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{presentAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="5" width="65" height="25" uuid="f9b87e0c-68cb-45bb-9831-30e684f3c0b2"/>
+				<box topPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Reference:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="104" y="5" width="347" height="25" uuid="1dcfadf2-a441-4318-9a22-972f01f5ef84"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{refNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="80" width="100" height="25" uuid="2145c675-2e67-46aa-8a2b-b8ee7abcdf99"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="105" width="516" height="25" uuid="b54586d2-64bc-4323-982b-6cba6a5a01ad"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Human Resource Department ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="10" width="100" height="20" uuid="561e67fa-665c-4e70-8fa3-954d6618f02e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dear Sir,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="40" width="516" height="70" uuid="419d4b79-e3bc-478f-a04e-67513db4bcad"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{textBody}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="110" width="516" height="19" uuid="0263d6fe-cdf4-4d55-ab92-a6b3745e7e0a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Please accept my joining letter and take necessary action as required.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="165" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="27" width="479" height="20" uuid="d60951f5-9895-46ca-a008-94bc05276d40"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Yours Truly]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="111" width="41" height="20" uuid="3f8f0a32-26b4-4972-9f4c-21b75f053974"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="81" width="305" height="20" uuid="b8c483e1-1c88-4080-854d-ec2756bdee98"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[_________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="111" width="438" height="20" uuid="4646e251-1639-4b8d-8c56-6abf2072c9e9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
